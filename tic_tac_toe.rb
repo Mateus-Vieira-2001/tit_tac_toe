@@ -1,28 +1,40 @@
 #jogo da velha
+module TicTacToe
+  puts '___|___|___'
+  puts '___|___|___'
+  puts '   |   |   '
+  class Player
+      def initialize(name,character)
+        @name=name
+        @character=character
+      end
 
-#module
-#end
+      def to_s
+        "#{@name} (#{@character})"
+      end
+  end
 
-class Player
 
 
-    def initialize(name,character)
-      @name=name
-      @character=character
+  class Game
+
+    def self.Board(columns,row,board)
+
+       oard[columns.to_i][row.to_i]
     end
-end
-puts "Digite o nome do jogador 1"
-name1=  gets.chomp
+    board = [[0,0,0],[0,0,0],[0,0,0]]
 
-puts "Escolha o caracter entre X e O"
-character1 = gets.chomp.upcase
-puts "Digite o nome do jogador"
-name2 = gets.chomp
+    turn = 0
+    case turn
+    when 0
+      puts "Jodador 1, selecione uma posição no tabuleiro"
+      columns = gets.chomp
+      row = gets.chomp
+      self.Board(columns,row,board)
+    end
+  end
 
-if character1 == "X"
-  character2="O"
-else
-  character2=='X'
+  player1 = Player.new("player1","X")
+  player2 = Player.new("player2","O")
+
 end
-player1 = Player.new(name1,character1)
-player2 = Player.new(name2,character2)
