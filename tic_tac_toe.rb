@@ -20,7 +20,7 @@ module TicTacToe
 
     def self.Board(columns,row,board)
 
-       oard[columns.to_i][row.to_i]
+      board[columns.to_i][row.to_i]
     end
     board = [[0,0,0],[0,0,0],[0,0,0]]
 
