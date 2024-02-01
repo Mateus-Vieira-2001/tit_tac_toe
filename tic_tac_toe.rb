@@ -116,59 +116,6 @@ module TicTacToe
           end
         end
 
-        # #analisa linha 0
-        # if @board[0][0] == @board[0][1] and  @board[0][1] == @board[0][2] and @board[0][0] !='-' @board[0][1] and  @board[0][1] == @board[0][2]
-        #   puts "#{}1"
-        #   break
-        # #analisa linha 1
-        # elsif @board[1][0] == @board[1][1] and  @board[1][1] == @board[1][2]
-        #   puts "#{}2"
-        #   break
-        # #analisa linha 2
-        # elsif @board[2][0] == @board[2][1] and  @board[2][1] == @board[2][2]
-        #   puts "#{}3"
-        #   break
-        # #analisa coluna 0
-        # elsif  @board[0][0] == @board[1][0] and  @board[1][0] ==@board[2][0]
-        #   puts "#{}4"
-        #   break
-        # #analisa coluna 1
-        # elsif  @board[0][1] == @board[1][1] and  @board[1][1] ==@board[2][1]
-        #   puts "#{}5"
-        #   break
-        # #analisa coluna 2
-        # elsif  @board[0][2] == @board[1][2] and  @board[1][2] ==@board[2][2]
-        #   puts "#{}6"
-        #   break
-        # #analisa diagonal 0
-        # els
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         @turn += 1
       end
     end
